@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+ font-family: "Lato", sans-serif;
+ background-image: url('https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2149006548.jpg?w=360');
+ background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+#logo {
+  display:absolute;
+  top:5px;
+  float:right;
+  right:25px;
+  height: 110px;
+  width: auto; 
+  border-radius: 50%; 
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(119, 25, 77, 0.795);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f5f4f0;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #12c020c7;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.image .homepic {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+  .image{
+    max-width:800px;
+  
+  
+  }
+  .hello {
+    text-align:center ;
+    TOP:30%;
+    FLOAT:left;
+    LEFT:75PX;
+    MAX-width: 100%;
+    
+     ;
+  }
+
+
+  
+   .image .homepic{
+    height:350px ;
+    width: 80%;
+    max-width:500px;
+  }
+  @media only screen and (max-width: 620px){
+    .image{
+    max-width:800px;
+    }
+  image .homepic{
+    width: 100%;
+  max-width: 400px;
+  height: auto;
+    height:60px ;
+    width: 50%;
+    max-width:100px;
+    FLOAT:RIGHT;
+    RIGHT:10PX;
+  }
+ 
+     
+  }
+  .information .container-fluid .row div:first-child {
+  	background-color: var(--primary);
+}
+
+.information .container-fluid .row div:last-child {
+  	background-color: white;
+}
+
+.information .container-fluid .row div:nth-child(2) {
+  	background-color: var(--primary-light);}
+
+  
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <h2>MARIA</h2>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.HTML">Home</a>
+  <a href="about.html">About</a>
+  <a href="works.html">Works</a>
+  <a href="contact.html">Contact</a>
+</div>
+<h2>My Portfolio</h2>
+<a href="#"><img id="logo" src="IMG/logo.png"></a>
+<span style="font-size:'30px';cursor:pointer" onclick="openNav()">&#9776;
+  
+    <div class="body-container">
+        <div class="leftbar">
+            <center>
+              <div class="image">
+                  
+                <img src="IMG/home pic.png" class="homepic">
+            </div>
+                        <div class="container" >
+                          <div class="row d-flex align-items-center">
+                              <div class="col-lg-7" data-aos="fade-right">
+                                  <p>Homepage</p>
+                                  <h1>MJ Mission</h1>
+                                  <p class="py-2 para-light">welcome to My Portfolio
+                                  </p>
+                                  <p class="py-2 para-light">bsit student and freelancer</p>
+              
+                                  <div class="my-3">
+                                      <a class="btn" href=""></a>
+                                  </div>
+                              </div>
+                             
+</html> 
+</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
